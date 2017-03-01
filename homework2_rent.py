@@ -56,9 +56,7 @@ def predict_rent():
     # Create numpy matrix and return results
     predictedLabels = np.matrix(regr.predict(X_test))
     return X_test,y_test,predictedLabels
-	
-def test():
-	return score_rent()	
+
 	
 if __name__ == "__main__":
     print("Check the following two functions:")
