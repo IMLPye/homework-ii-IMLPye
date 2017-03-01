@@ -58,7 +58,7 @@ def predict_rent():
     return X_test,y_test,predictedLabels
 	
 def test():
-	return score_rent()	
+    return score_rent()
 	
 if __name__ == "__main__":
-    print("Check the following two functions:")
+    print("Call the functions to see the result")
