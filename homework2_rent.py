@@ -62,4 +62,3 @@ def test():
 	
 if __name__ == "__main__":
     print("Check the following two functions:")
-	print(score_rent())

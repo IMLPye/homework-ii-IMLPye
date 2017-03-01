@@ -1,6 +1,4 @@
 import homework2_rent as h
-
-
 def test_rent():
     if (h.score_rent() < 0.2):
         return 1
