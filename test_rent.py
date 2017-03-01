@@ -1,4 +1,4 @@
-mport homework2_rent as h
+import homework2_rent as h
 
 
 def test_rent():
