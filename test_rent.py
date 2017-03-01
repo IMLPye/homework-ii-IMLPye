@@ -1,16 +1,14 @@
-import numpy as np
-from sklearn import datasets, linear_model
-from homework2_rent import score_rent
+import homework2_rent as h
 
-# Load the diabetes dataset
-diabetes = datasets.load_diabetes()
-# Use only one feature
-diabetes_X = diabetes.data[:, np.newaxis, 2]
 
-# Split the data into training/testing sets
-diabetes_X_train = diabetes_X[:-20]
-diabetes_X_test = diabetes_X[-20:]
-diabetes_y_train = diabetes.target[:-20]
-diabetes_y_test = diabetes.target[-20:]
+def test_rent():
+    if (h.score_rent() < 0.2):
+        return 1
+    else:
+        return 0
 
-print("Mean squared error is: %.2f" % score_rent(diabetes_X_test,diabetes_y_test,diabetes_X_train,diabetes_y_train))
+if __name__ == "__main__":
+    if test_rent()==1:
+        print("The model is good, and return me a good prediction result!")
+    else:
+        print("The result is not good as I expected")
