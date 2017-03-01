@@ -36,11 +36,9 @@ def score_rent():
 
     # Split test and train data
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
-
     # Create and train the linear Regression model
     regr = linear_model.LinearRegression()
     regr.fit(X_train, y_train)
-
     # Utilize r2_score function to calculate the R^2 value between test data and predicated data
     return r2_score(regr.predict(X_test),y_test)
 
@@ -48,17 +46,12 @@ def score_rent():
 def predict_rent():
     # Split test and train data
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
-
     # Create and train the linear Regression model
     regr = linear_model.LinearRegression()
     regr.fit(X_train, y_train)
-
     # Create numpy matrix and return results
     predictedLabels = np.matrix(regr.predict(X_test))
     return X_test,y_test,predictedLabels
-	
-def test():
-    return score_rent()
 	
 if __name__ == "__main__":
     print("Call the functions to see the result")
