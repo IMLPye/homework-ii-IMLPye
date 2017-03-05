@@ -3,9 +3,9 @@
    If the R^2 value is high, it means the predicated value and true value have big difference
    If the R^2 value is low, it means the predicated value and true value have small difference. Which means the prediction mdoel is good.
 
-2. I claim my algorithm could have high accuracy with R^2 smaller than 0.2.
+2. I claim my algorithm could have high accuracy with R^2 smaller than 0.3.
 
-3. The model is based on linear regression for the prediction
+3. The model is based on linear regression for the prediction.
 
 4. There are two files:
 	1) homework2_rent.py with two functions: 
